@@ -5,7 +5,8 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "check": "tsgo -p tsconfig.json --noEmit"
+    "check": "tsgo -p tsconfig.json --noEmit",
+    "test": "bun test"
   },
   "dependencies": {
     "@oh-my-pi/pi-utils": "17.2.4",

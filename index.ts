@@ -322,12 +322,13 @@ export default function discordRpcExtension(pi: ExtensionAPI) {
 	pi.on("session_tree", (_event, ctx) => resetSession(ctx));
 
 	pi.on("agent_start", (_event, ctx) => {
+		activeTools.clear();
 		working = true;
 		queuePresenceUpdate(ctx);
 	});
 
 	pi.on("agent_end", (event, ctx) => {
-		working = event.willContinue === true;
+		working = event.willContinue === true || !ctx.isIdle();
 		if (!working) activeTools.clear();
 		queuePresenceUpdate(ctx);
 	});
