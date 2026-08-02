@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "allowJs": false,
+    "lib": ["DOM", "ESNext"],
+    "module": "Preserve",
+    "moduleDetection": "force",
+    "noEmit": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "types": ["bun"]
+  },
+  "include": ["index.ts"]
+}

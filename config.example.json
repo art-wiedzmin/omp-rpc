@@ -1,0 +1,17 @@
+{
+  "clientId": "",
+  "activityName": "Oh My Pi",
+  "showTool": false,
+
+  "firstLine": {
+    "showProject": false,
+    "showModel": false,
+    "showEffort": false,
+    "showSession": false
+  },
+  "secondLine": {
+    "showRequests": false,
+    "showTokens": false,
+    "showCost": false
+  }
+}
